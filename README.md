@@ -9,9 +9,6 @@ I use HAVING to filter users with at least one of each.
 I used SUM(amount) for total deposits.
 Sort by total deposits using Order by
 
-**Challenges:**
-Understanding which column was for savings/investment plan.
-
 ## Question 2
 **Approach:**
 I use a WITH clause (CTE) to:
