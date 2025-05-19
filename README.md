@@ -28,3 +28,13 @@ Using is_regular_savings = 1 and is_a_fund as savings and investment plan
 I used MAX(s.transaction_date) to get most recent transaction date for the plan
 and DATEDIFF(CURRENT_DATE, MAX(s.transaction_date)) Number of days since the last transaction
 and date less than 365
+
+## Question 3
+**Approach:**
+i join users_customuser and savings_savingsaccount on u.id = sa.owner_id.
+Calculated tenure: months between date_joined and today.
+Counted total transactions: each row in savings_savingsaccount is a transaction.
+Calculated profit per transaction: confirmed_amount × 0.001.
+Got average profit per transaction using AVG().
+Used the CLV formula.
+Grouped by user, sorted by CLV.
