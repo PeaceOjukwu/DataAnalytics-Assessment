@@ -29,7 +29,7 @@ I used MAX(s.transaction_date) to get most recent transaction date for the plan
 and DATEDIFF(CURRENT_DATE, MAX(s.transaction_date)) Number of days since the last transaction
 and date less than 365
 
-## Question 3
+## Question 4
 **Approach:**
 i join users_customuser and savings_savingsaccount on u.id = sa.owner_id.
 Calculated tenure: months between date_joined and today.
